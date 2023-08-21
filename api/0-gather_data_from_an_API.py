@@ -10,8 +10,8 @@ if __name__ == '__main__':
     API_URL = 'https://jsonplaceholder.typicode.com'
 
     id = sys.argv[2]
-    request = requests.get('{}/users/{}/todos'.format(API_URL, id)
-                           , params={"_expand": "user"})
+    request = requests.get('{}/users/{}/todos'.format
+                           (API_URL, id), params={"_expand": "user"})
 
     response = request.json()
 
