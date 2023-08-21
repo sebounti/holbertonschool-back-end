@@ -3,6 +3,7 @@
 
 import requests
 import sys
+import json
 
 
 if __name__ == "__main__":
@@ -28,4 +29,4 @@ if __name__ == "__main__":
           .format(json_names['name'], tasks_completed, all_tasks))
 
     for title_task in titles_completed:
-        print('\t {}'.format(title_task))
+        print("\t {}".format(title_task))
