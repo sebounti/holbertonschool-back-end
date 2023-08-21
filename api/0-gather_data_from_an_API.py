@@ -1,15 +1,17 @@
 #!/usr/bin/python3
 """Script that prints specific information from an API"""
+
 import json
 import requests
 import sys
 
+
 if __name__ == '__main__':
     API_URL = 'https://jsonplaceholder.typicode.com'
 
-    id = sys.argv[1]
-    request = requests.get('{}/users/{}/todos'.format(
-        API_URL, id), params={"_expand": "user"})
+    id = sys.argv[2]
+    request = requests.get('{}/users/{}/todos'.format(API_URL, id)
+                           , params={"_expand": "user"})
 
     response = request.json()
 
