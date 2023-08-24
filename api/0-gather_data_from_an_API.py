@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Python script that for a given employee ID returns all his todo list"""
 
+import json
 import requests
 import sys
-import json
 
 
 if __name__ == "__main__":
